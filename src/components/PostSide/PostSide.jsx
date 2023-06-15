@@ -2,11 +2,11 @@ import React from 'react'
 import './PostSide.css'
 import PostShare from '../PostShare/PostShare'
 import Posts from '../Posts/Posts'
-const PostSide = () => {
+const PostSide = (props) => {
   return (
     <div className="PostSide">
       <PostShare/>
-      <Posts/>
+      <Posts postList = {props.postList}/>
     </div>
   )
 }

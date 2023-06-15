@@ -2,10 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { MantineProvider } from "@mantine/core";
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <MantineProvider withGlobalStyles withNormalizeCSS>
-  <App/>
+    <BrowserRouter>
+    <App/>
+    </BrowserRouter>
   </MantineProvider>,
   document.getElementById("root")
 );
